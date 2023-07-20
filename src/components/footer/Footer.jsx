@@ -33,18 +33,18 @@ const Footer = () => {
           <div className="mb-3 flex items-center justify-center space-x-2">
             <p>Phone</p>
             <BsFillTelephoneFill size={20} />
-            <span className="mx-2 text-orange-200 ">: +254768687334</span>
+            <span className="mx-2 text-orange-200 ">: +254702477708</span>
           </div>
           <div className="mb-3 flex items-center justify-center space-x-2">
             <p>Email</p>
             <MdEmail size={20} />
             <span className="mx-2 text-orange-200">
-              : musilibrian07@gmail.com
+              : karanujohn171@gmail.com
             </span>
           </div>
           <div className="mb-3 flex items-center space-x-2 justify-center hover:cursor-pointer">
             <a
-              href="https://www.linkedin.com/in/brian-musili-405b1220a/"
+              href="https://www.linkedin.com/in/john-karanu-a06214204"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -52,7 +52,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="http://www.linkedin.com/in/brian-musili-405b1220a/"
+              href="https://www.linkedin.com/in/john-karanu-a06214204"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,14 +61,14 @@ const Footer = () => {
           </div>
           <div className="mb-3 flex items-center justify-center space-x-2 hover:cursor-pointer">
             <a
-              href="https://github.com/MusiliC"
+              href="https://github.com/karanu-171"
               target="_blank"
               rel="noopener noreferrer"
             >
               <p>Github</p>
             </a>
             <a
-              href="https://github.com/MusiliC"
+              href="https://github.com/karanu-171"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -83,7 +83,7 @@ const Footer = () => {
           <p className="mb-3">Privacy Policy and Terms of Use</p>
           <p className="mb-3">
             Made and Designed by
-            <span className="text-orange-200"> @Brian Musili</span> 2023{" "}
+            <span className="text-orange-200"> @John Karanu</span> 2023{" "}
           </p>
         </div>
       </div>

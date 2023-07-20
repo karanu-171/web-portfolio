@@ -16,7 +16,7 @@ const About = () => {
           {/* picture */}
           <div className="sm:mt-3 md:mt-0 lg:w-1/2 py-2">
             <img
-              src="./pics/musili.jpg"
+              src="./pics/karanu.jpg"
               alt=""
               className=" mx-auto rounded-full object-contain bg-gray-100 shadow-lg drop-shadow-sm  h-[250px] w-[250px] md:h-[300px] md:w-[300px] "
             />
@@ -37,7 +37,7 @@ const About = () => {
             <br />
             <p className=" mx-auto w-[90%]  font-semibold">
               <span className="font-bold">Skills: </span>
-              JavaScript, React, TypeScript, Express, Node, Redux,
+              JavaScript, React, Express, Node, Redux,
             </p>
 
             <br />

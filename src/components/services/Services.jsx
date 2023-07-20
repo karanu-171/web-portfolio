@@ -102,14 +102,7 @@ const Services = () => {
                 />
                 <p className="tools-text">My Sql</p>
               </div>
-              <div className="tools">
-                <img
-                  src="/pics/icons8-typescript.svg"
-                  className="icon-size"
-                  alt=""
-                />
-                <p className="tools-text">TypeScript</p>
-              </div>
+             
               <div className="tools">
                 <img
                   src="/pics/icons8-html-5.svg"

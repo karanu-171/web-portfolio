@@ -19,7 +19,7 @@ export const Home = () => {
               <h2 className="text-3xl px-4 font-bold drop-shadow-sm lg:text-4xl">
                 Hey, I'm
                 <div className="text-3xl my-2 md:my-2  lg:text-4xl">
-                  Brian Musili
+                  John Karanu
                 </div>
               </h2>
 
@@ -49,7 +49,7 @@ export const Home = () => {
                   <button className="btn">Hire Me</button>
                 </Link>
                 <a
-                  href="http://github.com/MusiliC/"
+                  href="http://github.com/karanu-171/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

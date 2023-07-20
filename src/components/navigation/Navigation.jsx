@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, AnimateScroll as scroll } from "react-scroll";
 import { HiMenu, HiOutlineCode } from "react-icons/hi";
 import { TbLetterX } from "react-icons/tb";
-import useMediaQuery from "../hooks/UseMediaQuery.js";
+import useMediaQuery from "../hooks/UseMediaQuery";
 
 const Navigation = ({ isTopOfPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
