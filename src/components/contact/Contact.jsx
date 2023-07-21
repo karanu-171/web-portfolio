@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Common from "../common/Common";
-import Error from "../common/Error";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
@@ -9,32 +8,33 @@ const Contact = () => {
   const [send, setSend] = useState(false);
   const [error, setError] = useState(false);
 
+  
+
   const sendEmail = (e) => {
     e.preventDefault();
     // console.log(e.target.value)
 
     emailjs
       .sendForm(
-        process.env.React_App_SERVICE_KEY,
-        process.env.React_App_TEMPLATE_KEY,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.React_App_PUBLIC_KEY
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
+          console.log("message sent");
           e.target.reset();
           setSend(true);
-          var timeout = setTimeout(function () {
-            setSend(false);
-          }, 3000);
+          toast.success("Email sent successfully")
+         
         },
         (error) => {
           console.log(error.text);
           setError(true);
-          var timeout = setTimeout(function () {
-            setError(false);
-          }, 3000);
+          toast.error("Email not sent")
+      
         }
       );
   };
@@ -62,41 +62,39 @@ const Contact = () => {
               onSubmit={sendEmail}
               className="bg-white shadow-lg border border-gray-200  rounded px-4 pt-4 pb-6 mb-4"
             >
-              {send && <Common />}
-              {error && <Error />}
-              <div className="mb-1">
-                <label
-                  className="block text-sm text-gray-700   mb-1"
-                  htmlFor="username"
-                >
-                  Email:
-                </label>
-                <input
-                  className="form-input"
-                  name="user_email"
-                  id="username"
-                  type="email"
-                  placeholder="email@dormain.com"
-                  required
-                />
-              </div>
+      
               <div className="mb-1">
                 <label
                   className="block text-sm text-gray-700 mb-1 "
-                  htmlFor="password"
+                  htmlFor="userName"
                 >
                   Name
                 </label>
                 <input
                   className="form-input"
                   name="user_name"
-                  id="password"
+                  id="userName"
                   type="text"
                   placeholder="Your name"
                   required
                 />
               </div>
-
+              <div className="mb-1">
+                <label
+                  className="block text-sm text-gray-700   mb-1"
+                  htmlFor="userEmail"
+                >
+                  Email:
+                </label>
+                <input
+                  className="form-input"
+                  name="user_email"
+                  id="userEmail"
+                  type="email"
+                  placeholder="email@gmail.com"
+                  required
+                />
+              </div>
               <div className="mb-1">
                 <label
                   htmlFor="message"

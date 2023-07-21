@@ -25,12 +25,13 @@ export const Home = () => {
 
               <div className="w-full px-4 my-3 md:text-xl   md:my-8 font-semibold">
                 <span className="text-blue-600 text-xl mb-4 md:text-xl ">
-                  Junior Full Stack Developer
+                  Full Stack Developer
                   <br />
                 </span>
                 <p className="mt-4 ">
-                  Let's code!, let's build something amazing together!
+                  I'm a kenyan based software developer focused on crafting clean and user friendly
                   <br />
+                  experinces. I am passionate about building excellent software that improves the lives around me
                   Welcome To
                   <span className="text-blue-600"> My Profile</span>
                 </p>

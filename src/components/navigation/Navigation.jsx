@@ -12,6 +12,7 @@ const Navigation = ({ isTopOfPage }) => {
     { name: "About", link: "About" },
     { name: "Services", link: "services" },
     { name: "Projects", link: "projects" },
+    { name: "Contact", link: "contacts" },
   ];
 
   const navbarBg = isTopOfPage ? "" : "bg-gray-50  shadow-md  w-full";
@@ -26,12 +27,12 @@ const Navigation = ({ isTopOfPage }) => {
               <HiOutlineCode color="blue" size={28} className="mr-1" />
             </span>
             <p className="text-xl text-gray-700 font-semibold mr-2 ">
-              MUSILI
+              KARANU
               <span className="text-blue-600">.</span>
             </p>
           </div>
           <div>
-            <ul className=" md:flex md:items-center hover:cursor-pointer">
+            <ul className=" md:flex md:items-end hover:cursor-pointer">
               {links.map((each) => (
                 <li key={each.name} className="md:mx-2 lg:mx-5 font-semibold ">
                   <Link
@@ -48,13 +49,7 @@ const Navigation = ({ isTopOfPage }) => {
             </ul>
           </div>
 
-          <div>
-            <Link to="contact" smooth={true} offset={5} duration={500}>
-              <button className="hidden  md:block bg-transparent hover:bg-blue-500 text-blue-700 text-sm font-semibold hover:text-white py-2 px-3 border border-blue-500 hover:border-transparent rounded">
-                <span> CONTACT ME</span>
-              </button>
-            </Link>
-          </div>
+          
         </div>
       ) : (
         <div className="flex justify-between cursor-pointer px-4 py-3 items-center">
@@ -63,7 +58,7 @@ const Navigation = ({ isTopOfPage }) => {
               <HiOutlineCode color="blue" size={30} className="mr-1" />
             </span>
             <p className="text-xl text-gray-700 font-semibold mr-2 ">
-              MUSILI
+              KARANU
               <span className="text-blue-600">.</span>
             </p>
           </div>
@@ -109,16 +104,7 @@ const Navigation = ({ isTopOfPage }) => {
                 </Link>
               </p>
             ))}
-            <div>
-              <Link to={"contact"} smooth={true} offset={10} duration={500}>
-                <button
-                  className="mb-4 bg-transparent hover:bg-blue-500 text-blue-700 text-sm font-semibold hover:text-white py-2 px-3 border border-blue-500 hover:border-transparent rounded"
-                  onClick={() => setIsMenuToggled(!isMenuToggled)}
-                >
-                  CONTACT ME
-                </button>
-              </Link>
-            </div>
+    
           </div>
         </div>
       )}

@@ -3,7 +3,8 @@ import About from "./components/about/About";
 
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-
+import { ToastContainer, toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 import { Home } from "./components/home/Home";
 import Navigation from "./components/navigation/Navigation";
 import Services from "./components/services/Services";
@@ -35,6 +36,7 @@ function App() {
         <Contact />
         <Footer />
       </Router>
+      <ToastContainer/>
     </div>
   );
 }

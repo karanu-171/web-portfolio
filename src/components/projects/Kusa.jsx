@@ -19,7 +19,7 @@ const Kusa = () => {
       </div>
       <div className="w-[90%] mx-auto mt-4">
         <p className="p-2 mt-3  underline font-semibold text-blue-800 bg-zinc-200 rounded-lg">
-          https://github.com/MusiliC/KUSA-system
+          https://github.com/karanu-171/kusa-system
         </p>
       </div>
     </div>
