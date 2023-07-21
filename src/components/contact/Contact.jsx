@@ -1,21 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
 
-  const [send, setSend] = useState(false);
-  const [error, setError] = useState(false);
-
-  
-
   const sendEmail = (e) => {
     e.preventDefault();
     // console.log(e.target.value)
 
-    emailjs
-      .sendForm(
+    emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
@@ -26,13 +20,11 @@ const Contact = () => {
           console.log(result.text);
           console.log("message sent");
           e.target.reset();
-          setSend(true);
           toast.success("Email sent successfully")
          
         },
         (error) => {
           console.log(error.text);
-          setError(true);
           toast.error("Email not sent")
       
         }
