@@ -7,6 +7,8 @@ import useMediaQuery from "../hooks/UseMediaQuery";
 const Navigation = ({ isTopOfPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
 
+  
+
   let links = [
     { name: "Home", link: "landing" },
     { name: "About", link: "About" },

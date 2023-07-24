@@ -1,7 +1,7 @@
 import React from "react";
 import Kusa from "./Kusa";
-import Gym from "./Gym";
-import Dashboard from "./Dashboard";
+import Message from "./message";
+import Budget from "./Budget";
 
 const Projects = () => {
   return (
@@ -22,10 +22,10 @@ const Projects = () => {
             <Kusa />
           </div>
           <div>
-            <Gym />
+            <Message />
           </div>
           <div>
-            <Dashboard/>
+            <Budget/>
           </div>
         </div>
       </div>

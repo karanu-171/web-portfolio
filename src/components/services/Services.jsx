@@ -118,6 +118,11 @@ const Services = () => {
               </div>
 
               <div className="tools">
+                <img src="/pics/icons8-bootstrap.svg" className="icon-size" alt="" />
+                <p className="tools-text">Bootstrap</p>
+              </div>
+
+              <div className="tools">
                 <img src="/pics/icons8-git.svg" className="icon-size" alt="" />
                 <p className="tools-text">Git</p>
               </div>

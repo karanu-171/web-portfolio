@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, AnimateScroll as scroll } from "react-scroll";
+import Resume from "../images/Resume.pdf";
 
 const About = () => {
   return (
@@ -29,10 +30,9 @@ const About = () => {
               I’m a Full stack Developer located in Nairobi, Kenya, passionate
               about building robust, beautiful and clean experiences for my
               users. I enjoy taking complex concepts and turning them into
-              simple and beautiful interface designs. I look at languages and
-              frameworks as just tools that help bring an idea to life, thus I
-              learn what needs to be learnt in order to build what needs to be
-              built.
+              simple and beautiful interface designs. I am passionate about 
+              tech and am always curious and open to learning new things
+              and grow as a software developer
             </p>
             <br />
             <p className=" mx-auto w-[90%]  font-semibold">
@@ -47,7 +47,7 @@ const About = () => {
             </p>
 
             <div className="flex  justify-between items-center  mx-auto w-[90%] mt-10 ">
-              <a href="Resume.pdf" rel="noopener noreferrer">
+              <a href={Resume} rel="noopener noreferrer" download="Resume">
                 <button className=" bg-transparent   py-2  px-4  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white  border border-blue-500 hover:border-transparent rounded">
                   Resume
                 </button>

@@ -7,7 +7,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // console.log(e.target.value)
 
     emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -21,12 +20,10 @@ const Contact = () => {
           console.log("message sent");
           e.target.reset();
           toast.success("Email sent successfully")
-         
         },
         (error) => {
           console.log(error.text);
           toast.error("Email not sent")
-      
         }
       );
   };
@@ -54,7 +51,6 @@ const Contact = () => {
               onSubmit={sendEmail}
               className="bg-white shadow-lg border border-gray-200  rounded px-4 pt-4 pb-6 mb-4"
             >
-      
               <div className="mb-1">
                 <label
                   className="block text-sm text-gray-700 mb-1 "
